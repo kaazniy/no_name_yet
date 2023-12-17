@@ -1,0 +1,13 @@
+<!Doctype html>
+<html lang="English">
+<head>
+    <title></title>
+</head>
+<body>
+    {% for lesson in lessons %}
+        <h1>{{ lesson.title }}</h1>
+        <p>By {{ lesson.author }} on {{ lesson.date_posted }}</p>
+        <p>{{ lesson.context }}</p>
+    {% endfor %}
+</body>
+</html>
